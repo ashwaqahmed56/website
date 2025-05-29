@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register</title>
+  <link rel="shortcut icon" href="./resources/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="./css/register.css" />
+</head>
+<body>
+  <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="./resources/logo.png" alt="" height="80px" width="90px" style="padding-right: 20px;">
+                <a href="#">
+                    Learning Leaders EdTech Academy.
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="./index.html">home</a></li>
+                <li><a href="./courses.html">Course</a></li>
+                <li><a href="./support.html">Support</a></li>
+                <li><a href="./Dashborad.html">Dashboard</a></li>
+                <li><a href="./Startup-u.html">Startup-U</a></li>
+            </ul>
+        </nav>
+    </header>
+  <!-- Registration Form Container -->
+  <main>
+    <section class="card">
+      <h2>Create an Account</h2>
+      
+      <form autocomplete="off">
+        
+        <!-- Full Name -->
+        <input type="text" name="fullname" placeholder="Full Name" required />
+
+        <!-- Email -->
+        <input type="email" name="email" placeholder="Email Address" required />
+
+        <!-- Phone with Country Code -->
+        <input type="tel" name="phone" placeholder="Phone Number (e.g. +91 9876543210)" required />
+
+        <!-- Password -->
+        <input type="password" name="password" placeholder="Password" required />
+
+        <!-- Confirm Password -->
+        <input type="password" name="confirm_password" placeholder="Confirm Password" required />
+
+        <!-- CAPTCHA -->
+        <label class="captcha-label">Prove your humanity</label>
+        <div class="captcha-box">
+          <span>6 + 4 =</span>
+          <input type="text" name="captcha" required />
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn">Register</button>
+
+        <!-- Login Redirect -->
+        <p class="bottom-link">
+          Already have an account? <a href="./Dashborad.html"><strong>Login Now</strong></a>
+        </p>
+
+      </form>
+    </section>
+  </main>
+    <footer class="custom-footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./Startup-u.html">Dashboard</a></li>
+                    <li><a href="./courses.html">Course</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>More</h3>
+                <ul>
+                    <li><a href="privacy.html">Privacy and Policy</a></li>
+                    <li><a href="terms.html">Terms and Condition</a></li>
+                    <li><a href="refund.html">Refund Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Social Media</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+                    <a href="https://x.com/"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"></a>
+                    <a href="https://www.youtube.com/"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube"></a>
+                    <a href="https://www.instagram.com/"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+                    <a href="https://www.linkedin.com/"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+        <p>&copy; 2025 Learning Leaders EdTech Academy. All Rights Reserved.</p>
+    </footer>
+
+ 
+
+    <script>
+        function f1(){
+            location.href="./courses.html"
+        }
+    </script>
+</body>
+</html>

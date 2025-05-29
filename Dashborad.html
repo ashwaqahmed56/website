@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Dashboard</title>
+  <link rel="shortcut icon" href="./resources/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="./css/Dashboard.css">
+</head>
+<body>
+  <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="./resources/logo.png" alt="Logo" height="80px" width="90px">
+                <a href="#">Learning Leaders EdTech Academy.</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Course</a></li>
+                <li><a href="support.html" class="active">Support</a></li>
+                <li><a href="Dashborad.html">Dashboard</a></li>
+                <li><a href="Startup-u.html">Startup-U</a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
+  <div class="login-container">
+    <h2>Hi, Welcome back!</h2>
+    <form >
+      <input type="text" name="username" placeholder="Username or Email Address" required id="Email">
+      <input type="password" name="password" placeholder="Password" required id="pass">
+
+      <div class="options">
+        <label><input type="checkbox" name="remember"> Keep me signed in</label>
+        <a href="forgetpassword.html">Forgot Password?</a>
+      </div>
+
+      <button type="submit" onclick="sub()">Sign In</button>
+
+      <div class="register-link">
+        Don't have an account? <a href="register.html">Register Now</a>
+      </div>
+    </form>
+  </div>
+</main>
+    <footer class="custom-footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Startup-u.html">About us</a></li>
+                    <li><a href="courses.html">Course</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>More</h3>
+                <ul>
+                    <li><a href="privacy.html">Privacy and Policy</a></li>
+                    <li><a href="terms.html">Terms and Condition</a></li>
+                    <li><a href="refund.html">Refund Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Social Media</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+                    <a href="https://x.com/"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"></a>
+                    <a href="https://www.youtube.com/"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube"></a>
+                    <a href="https://www.instagram.com/"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+                    <a href="https://www.linkedin.com/"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+        <p>&copy; 2025 Learning Leaders EdTech Academy. All Rights Reserved.</p>
+    </footer>
+
+     
+
+    <script>
+       var ema = document.getElementById('Email');
+        var pas = document.getElementById('pass');
+
+        function f1() {
+            location.href = "./course.html";
+        }
+
+        function sub() {
+            if (ema.value.trim() === "" || pas.value.trim() === "") {
+                alert("Enter the email and password");
+            } else {
+                alert("Thank you for submission");
+            }
+        }
+    </script>
+</body>
+</html>
